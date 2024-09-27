@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { width: 300px; padding: 10px; }
+    #status, #currentDomain { font-weight: bold; }
+    #whitelist { margin-top: 10px; }
+    #whitelistItems { max-height: 200px; overflow-y: auto; }
+  </style>
+</head>
+<body>
+  <h3>视频后台播放插件</h3>
+  <p>状态: <span id="status">加载中...</span></p>
+  <p>当前域名: <span id="currentDomain">加载中...</span></p>
+  <button id="toggleBtn">切换状态</button>
+  <button id="addToWhitelistBtn">添加到白名单</button>
+  <div id="whitelist">
+    <h4>白名单</h4>
+    <div id="whitelistItems"></div>
+    <input type="text" id="newDomain" placeholder="输入新域名">
+    <button id="addDomainBtn">添加</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
